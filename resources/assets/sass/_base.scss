@@ -1,0 +1,57 @@
+@import "vendor/reset";
+@import "bourbon";
+@import "neat";
+
+$font-sans:'Slabo 27px', serif;
+
+/*//////////////////////////////////////
+//  mixins
+//////////////////////////////////////*/
+
+@mixin input-placeholder {
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+/*//////////////////////////////////////
+//  silent classes
+//////////////////////////////////////*/
+%absolute-middle{
+    @include position(absolute, 50% auto auto 50%);
+    @include transform(translateY(-50%) translateX(-50%));
+}
+
+%middle{
+    @include position(relative, 50% auto auto auto);
+    @include transform(translateY(-50%));
+}
+
+/*//////////////////////////////////////
+//  custom dev
+//////////////////////////////////////*/
+
+*{
+    // @include box-sizing(border-box);
+}
+
+body,html{
+	display:block;
+	height:100%;
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+}
+
+body{
+    font-size:62.5%;
+    position:relative;
+}
+
+h1,h2,h3,h4,h5,h6,p,a, li{
+	font-family: $font-sans;
+	font-size:1em;
+	line-height:1.5em;
+}

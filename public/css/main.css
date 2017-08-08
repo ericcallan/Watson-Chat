@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/*//////////////////////////////////////
+//  mixins
+//////////////////////////////////////*/
+/*//////////////////////////////////////
+//  silent classes
+//////////////////////////////////////*/
+video, canvas, .watson-container .face, .container {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%); }
+
+/*//////////////////////////////////////
+//  custom dev
+//////////////////////////////////////*/
+body, html {
+  display: block;
+  height: 100%;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important; }
+
+body {
+  font-size: 62.5%;
+  position: relative; }
+
+h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: "Slabo 27px", serif;
+  font-size: 1em;
+  line-height: 1.5em; }
+
+body {
+  background-color: #fff;
+  overflow: hidden; }
+
+.watson-container {
+  max-width: 840px;
+  width: 80%;
+  min-width: 500px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative; }
+  .watson-container header {
+    padding-top: 1rem;
+    text-align: center; }
+    .watson-container header h1 {
+      color: #000;
+      font-size: 3em; }
+    .watson-container header h2 {
+      color: #000;
+      font-size: 1.25rem;
+      margin: 0 0 1rem 0; }
+  .watson-container .content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    text-align: center; }
+    .watson-container .content img {
+      height: 1.5rem;
+      margin: 0 auto;
+      margin-top: 1rem;
+      opacity: 0;
+      -webkit-transition: 0.25s opacity ease-in-out;
+      -moz-transition: 0.25s opacity ease-in-out;
+      transition: 0.25s opacity ease-in-out; }
+      .watson-container .content img.active {
+        opacity: 1; }
+    .watson-container .content .circle {
+      height: 1.5em;
+      width: 1.5em;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      position: relative;
+      border-radius: 50%;
+      position: absolute;
+      top: 0.5rem;
+      left: 98%; }
+      .watson-container .content .circle.recording {
+        background-color: red; }
+    .watson-container .content input[type="submit"] {
+      height: 2rem;
+      border: 1px solid #000;
+      background-color: #fff;
+      color: #000;
+      border-radius: 5px;
+      font-size: 1.25em;
+      -webkit-transition: 0.25s all ease-in-out;
+      -moz-transition: 0.25s all ease-in-out;
+      transition: 0.25s all ease-in-out;
+      cursor: pointer;
+      margin: 1rem 0 0 0;
+      width: 40%;
+      font-size: 2em;
+      font-weight: 100;
+      letter-spacing: 8px; }
+      .watson-container .content input[type="submit"]:hover {
+        background-color: #000;
+        border: 1px solid #fff;
+        color: #fff; }
+    .watson-container .content form input[type="text"] {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      height: 2rem;
+      font-size: 1em;
+      padding: 0 0 0 1rem;
+      width: 80%; }
+  .watson-container ul {
+    height: 40%;
+    overflow: scroll;
+    padding-bottom: 5rem; }
+    .watson-container ul::-webkit-scrollbar {
+      display: none; }
+    .watson-container ul .watson {
+      margin: 1rem 0 4rem 0;
+      color: #fff;
+      font-size: 2.25em;
+      max-height: 0;
+      position: relative;
+      border-radius: 10px;
+      transition-delay: .25s;
+      -webkit-transition: 0.25s all ease-in-out;
+      -moz-transition: 0.25s all ease-in-out;
+      transition: 0.25s all ease-in-out; }
+      .watson-container ul .watson p {
+        padding: .5rem; }
+      .watson-container ul .watson.active {
+        max-height: 999px; }
+      .watson-container ul .watson:after, .watson-container ul .watson::before {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        -webkit-transition: 0.25s all ease-in-out;
+        -moz-transition: 0.25s all ease-in-out;
+        transition: 0.25s all ease-in-out;
+        transition-delay: .25s; }
+      .watson-container ul .watson::after {
+        border-color: rgba(136, 183, 213, 0);
+        border-top-color: #88b7d5;
+        border-width: 20px;
+        margin-left: -20px; }
+      .watson-container ul .watson::before {
+        border-color: rgba(194, 225, 245, 0);
+        border-top-color: #c2e1f5;
+        border-width: 20px;
+        margin-left: -20px; }
+    .watson-container ul .watsonRequest {
+      background-color: #6b949e;
+      text-align: left; }
+      .watson-container ul .watsonRequest:after, .watson-container ul .watsonRequest::before {
+        left: 20%; }
+      .watson-container ul .watsonRequest::after {
+        border-color: rgba(136, 183, 213, 0);
+        border-top-color: rgba(107, 148, 158, 0); }
+      .watson-container ul .watsonRequest::before {
+        border-color: rgba(194, 225, 245, 0);
+        border-top-color: #6b949e; }
+      .watson-container ul .watsonRequest.active::after {
+        border-color: rgba(136, 183, 213, 0);
+        border-top-color: rgba(136, 183, 213, 0); }
+      .watson-container ul .watsonRequest.active::before {
+        border-color: rgba(194, 225, 245, 0);
+        border-top-color: #6b949e; }
+    .watson-container ul .watsonResponse {
+      background-color: #d4766a;
+      text-align: right; }
+      .watson-container ul .watsonResponse:after, .watson-container ul .watsonResponse::before {
+        left: 80%; }
+      .watson-container ul .watsonResponse::after {
+        border-color: rgba(136, 183, 213, 0);
+        border-top-color: rgba(212, 118, 106, 0); }
+      .watson-container ul .watsonResponse::before {
+        border-color: rgba(194, 225, 245, 0);
+        border-top-color: #d4766a; }
+      .watson-container ul .watsonResponse.active::after {
+        border-color: rgba(136, 183, 213, 0);
+        border-top-color: rgba(212, 118, 106, 0); }
+      .watson-container ul .watsonResponse.active::before {
+        border-color: rgba(194, 225, 245, 0);
+        border-top-color: #d4766a; }
+  .watson-container .face {
+    top: 45%; }
+    .watson-container .face canvas {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1; }
+    .watson-container .face img {
+      display: none; }
+
+.container {
+  text-align: center;
+  top: 25%; }
+  .container h1 {
+    font-size: 4em; }
+  .container h2 {
+    font-size: 2.5em; }
+  .container div {
+    border-top: 2px solid #000;
+    padding: 1rem;
+    margin-top: 2.5rem; }
+    .container div ul {
+      margin: 0 auto;
+      padding: 1rem;
+      width: 90%;
+      list-style-type: disc;
+      text-align: left; }
+      .container div ul li {
+        font-size: 2em; }

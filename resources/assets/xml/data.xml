@@ -1,0 +1,524 @@
+<dialog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="WatsonDialogDocument_1.0.xsd">
+<flow>
+<folder label="Main">
+<output>
+<prompt selectionType="RANDOM">
+<item>Hello, welcome to Mike’s Pizza</item>
+</prompt>
+<goto ref="getUserInput_2449614"/>
+</output>
+<getUserInput id="getUserInput_2449614">
+<search ref="folder_2449611"/>
+<default>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+I am sorry, I did not understand your question. Please try asking another one.
+</item>
+</prompt>
+</output>
+</default>
+</getUserInput>
+</folder>
+<folder label="Library">
+<folder label="Live Content" id="folder_2449611">
+<input>
+<grammar>
+<item>$ Who is *</item>
+<item>$ about *</item>
+</grammar>
+<input>
+<grammar>
+<item>$ (Lee Stanford)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Lee is a IT Director at P+s.Lee is from Mays Landing, NJ
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Anthony Henriques)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Anthony is a EVP, Creative Director at P+s.Anthony is from East Hartford, CT
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Jennifer Goslin)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Jennifer is a Account Director at P+s.Jennifer is from Kingston, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Kara Tierney)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Kara is a VP, Account Director at P+s.Kara is from Marshfield, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Mark Holden)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Mark is a Studio Artist at P+s.Mark is from Tewksbury, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Melissa Forrester)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Melissa is a Senior Program Manager at P+s.Melissa is from Marshfield, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Roy Wetherbee)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Roy is a Director, Measurement and Analytics at P+s.Roy is from Shrewsbury, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Steve Lynch)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Steve is a SVP Creative Director, Copy at P+s.Steve is from Sudbury, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Irene McCarty)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Irene is a Director, Digital Delivery at P+s.Irene is from Weymouth, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Lisa Stevenson)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Lisa is a Creative Director, Art at P+s.Lisa is from Severna Park, MD
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (David Simpson)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+David is a Senior Print Production Manager at P+s.David is from Reading, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Morgan Hewitt)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Morgan is a Technology Lead at P+s.Morgan is from Indianapolis, IN
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Andrew Pelosi)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Andrew is a EVP - Account Management at P+s.Andrew is from Needham, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Doris Boroje)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>Doris is a Associate Integrated Producer at P+s.</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Cristina Gordet)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Cristina is a Creative Director, Copy at P+s.Cristina is from Havana, Cuba
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Tanya Bechara)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>Tanya is a Senior Art Director / Designer at P+s.</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Rich Levy)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Rich is a President and CEO at P+s.Rich is from Morristown, NJ
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Kim Gallagher)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Kim is a Account Executive at P+s.Kim is from North Reading, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Felicia Fox)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Felicia is a Staff Accountant at P+s.Felicia is from Tyngsboro, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Rick Heil)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Rick is a Senior IT Manager at P+s.Rick is from Allentown, PA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Ian Venskus)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Ian is a Senior Creative Technologist at P+s.Ian is from Rumford, ME
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Inal Olmez)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Inal is a VP Creative Director, Art at P+s.Inal is from Needham, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Katharine Torrisi)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Katharine is a Assistant Media Planner at P+s.Katharine is from West Newbury, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Marianne Abrams)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Marianne is a Senior Staff Accountant at P+s.Marianne is from Walpole, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Kyle Ridolfo)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>Kyle is a Senior Web App Developer at P+s.</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Eric Buchka)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Eric is a Account Supervisor at P+s.Eric is from Gothenburg, Sweden
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Molly Eckard)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Molly is a Production Designer at P+s.Molly is from Blue Hill, ME
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Serena Tang)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Serena is a Junior Art Director at P+s.Serena is from Richmond, VA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Chris Bogusky)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Chris is a Associate Media Director, Social at P+s.Chris is from Schwenksville, PA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Maria Recupero)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Maria is a VP, Account Director at P+s.Maria is from Scranton, PA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Kim Dougher)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Kim is a Account Supervisor at P+s.Kim is from North Olmstead, OH
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Kaitlin Downing)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Kaitlin is a Media Supervisor at P+s.Kaitlin is from Quincy, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Lauren Leary)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Lauren is a Project Manager at P+s.Lauren is from Eastham, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Brian Bohne)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Brian is a Senior Digital Producer at P+s.Brian is from Sudbury, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Jessie Cross)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Jessie is a ACD, Content at P+s.Jessie is from Connecticut
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Christine Calabrese)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Christine is a HR Specialist at P+s.Christine is from West Caldwell, NJ
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Dan Bing)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Dan is a Executive Director - Business Development at P+s.Dan is from Burlington, VT
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Melisa Filipos)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Melisa is a Account Supervisor at P+s.Melisa is from Bethlehem, PA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Sara Goldsmith)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Sara is a Associate Creative Director at P+s.Sara is from Acton, MA
+</item>
+</prompt>
+</output>
+</input>
+<input>
+<grammar>
+<item>$ (Chris Paddock)</item>
+</grammar>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Chris is a Director, Digital Strategy at P+s.Chris is from Scotia, NY
+</item>
+</prompt>
+</output>
+</input>
+<output>
+<prompt selectionType="RANDOM">
+<item>
+Hmm I couldn't find a record of that employee - perhaps my records are incomplete
+</item>
+</prompt>
+</output>
+</input>
+</folder>
+</folder>
+<folder label="Storage"/>
+<folder label="Globals"/>
+<folder label="Concepts"/>
+</flow>
+<constants>
+<var_folder name="Home"/>
+</constants>
+<variables>
+<var_folder name="Home"/>
+</variables>
+</dialog>
